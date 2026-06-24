@@ -164,7 +164,7 @@ export const T = {
         org: 'Cartronic Group',
         period: '2025 – act.',
         desc: 'Administración de infraestructura corporativa: Active Directory (50+ usuarios), GPOs, firewall WatchGuard, virtualización (Proxmox, VMware) y monitorización (Nagios, Zabbix). Soporte N1-N2 y entorno SAP HANA on-premise.',
-      }
+      },
 	  {
         role: 'Atención técnica 24/7 · Servicio de seguridad electrónica',
         org: 'Movistar Prosegur Alarmas',
