@@ -6,7 +6,7 @@ animadas + consola opcional, bilingüe (ES/EN), PWA instalable y lista para Verc
 Stack: **Vite + React + Tailwind + Framer Motion**.
 
 ---
-
+<!--
 ## 1. Probarlo en local (opcional, recomendado)
 
 Necesitas Node.js 18+ instalado.
@@ -88,7 +88,7 @@ Casi todo el texto (ES/EN) está en **`src/data/content.js`**. Ahí cambias:
 Tras editar, `git add . && git commit -m "..." && git push` y Vercel redespliega.
 
 ---
-<!--
+
 ## Quitar el badge del evento (tras el Talent Day)
 
 En `src/data/content.js`, en `T.es` y `T.en`, borra o cambia la línea `event:`.
