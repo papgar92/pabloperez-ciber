@@ -184,7 +184,6 @@ export const T = {
     cv: 'CV',
     consoleHint: 'Abrir consola',
     consoleClose: 'Cerrar consola',
-    event: 'Evolve Talent Day · 25 jun 2026',
     statusReady: 'sistema operativo · listo para triaje',
   },
   en: {
