@@ -14,15 +14,15 @@ const PHRASES = {
     '¿buscas talento para tu SOC?',
     '¿hablamos?',
     'disponible · Madrid',
-    'defiendo pensando como quien ataca',
+    'para defender hay que saber como atacar',
     'el esfuerzo le gana al talento que no se esfuerza',
   ],
   en: [
     'looking for SOC talent?',
     'shall we talk?',
     'available · Madrid',
-    'I defend by thinking like the attacker',
-    'hard work beats talent that doesn\u2019t try',
+    'defense requires knowing how to attack',
+    'hard work beats talent that does not try',
   ],
 };
 
