@@ -13,7 +13,6 @@ export const CONTACT = {
   cal: 'https://cal.com/papgar92',
   htb: 'https://profile.hackthebox.com/profile/019ec60b-5005-723b-99c8-80cf5f74d4f0',
   cyberdefenders: 'https://cyberdefenders.org/p/papgar92/',
-  // CVs alojados en el portfolio whoami (GitHub Pages)
   cvES: '/CV-PPG-CIBER-ES.pdf',
   cvEN: '/CV-PPG-CIBER-EN.pdf',
   web: 'https://pabloperez-ciber.vercel.app/',
