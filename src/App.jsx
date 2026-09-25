@@ -11,16 +11,16 @@ import Typewriter from './components/Typewriter.jsx';
 // Frases que la "consola" teclea sola (edítalas a tu gusto)
 const PHRASES = {
   es: [
-    '¿buscas talento para tu SOC?',
-    '¿hablamos?',
-    'disponible · Madrid',
+    'detectar, contener, aprender',
+    'defensa en profundidad',
+    'Madrid',
     'para defender hay que saber como atacar',
     'el esfuerzo le gana al talento que no se esfuerza',
   ],
   en: [
-    'looking for SOC talent?',
-    'shall we talk?',
-    'available · Madrid',
+    'detect, contain, learn',
+    'defence in depth',
+    'Madrid',
     'defense requires knowing how to attack',
     'hard work beats talent that does not try',
   ],
@@ -71,7 +71,7 @@ const REDTEAM = {
   en: {
     eyebrow: '// red team · unlocked',
     title: 'The offensive side',
-    text: 'I train by solving Hack The Box machines (exploitation, enumeration, pivoting). Not to attack, but to anticipate: knowing the adversary\u2019s techniques means defending with an edge. That\u2019s thinking in purple.',
+    text: 'I train by solving Hack The Box machines (exploitation, enumeration, pivoting). Not to attack, but to anticipate: knowing the adversary’s techniques means defending with an edge. That’s thinking in purple.',
     items: [
       ['Recon & enum', 'nmap · gobuster · surface analysis'],
       ['Exploitation', 'web · services · weak credentials'],
