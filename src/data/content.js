@@ -13,8 +13,6 @@ export const CONTACT = {
   cal: '', // 'https://cal.com/papgar92' — desactivado: sin búsqueda activa
   htb: 'https://profile.hackthebox.com/profile/019ec60b-5005-723b-99c8-80cf5f74d4f0',
   cyberdefenders: 'https://cyberdefenders.org/p/papgar92/',
-  cvES: '/CV-PPG-CIBER-ES.pdf',
-  cvEN: '/CV-PPG-CIBER-EN.pdf',
   web: 'https://pabloperez-ciber.vercel.app/',
 };
 
@@ -185,7 +183,6 @@ export const T = {
     ],
     save: 'Guardar contacto',
     schedule: 'Agendar',
-    cv: 'CV',
     consoleHint: 'Abrir consola',
     consoleClose: 'Cerrar consola',
     statusReady: 'sistema operativo · listo para triaje',
@@ -235,7 +232,6 @@ export const T = {
     ],
     save: 'Save contact',
     schedule: 'Schedule',
-    cv: 'CV',
     consoleHint: 'Open console',
     consoleClose: 'Close console',
     statusReady: 'system operational · ready to triage',
