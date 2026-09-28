@@ -43,8 +43,8 @@ export default function Console({ lang, redTeam, onUnlock, apiRef }) {
       PROJECTS.forEach((p) => out.push({ type: 'out', text: 'drwxr-xr-x  ' + p.repo }));
     } else if (low === 'cat experience.log') {
       out.push({ type: 'out', text: lang === 'es'
-        ? '2017–2025 · Triaje técnico 24/7 (Movistar Prosegur Alarmas) · 2025– · Soporte IT (Cartronic / Prosegur Activa)'
-        : '2017–2025 · 24/7 technical triage (Movistar Prosegur Alarmas) · 2025– · IT Support (Cartronic / Prosegur Activa)' });
+        ? '2017–2025 · Triaje técnico 24/7 (Movistar Prosegur Alarmas) · 2025–2026 · Soporte IT (Prosegur Activa / Cartronic) · 2026– · Sistemas y Ciberseguridad (sector Defensa)'
+        : '2017–2025 · 24/7 technical triage (Movistar Prosegur Alarmas) · 2025–2026 · IT Support (Prosegur Activa / Cartronic) · 2026– · Systems & Cybersecurity (Defence sector)' });
     } else if (low === 'skills --list' || low === 'skills') {
       SKILLS.forEach((s) => out.push({ type: 'out', text: s[lang] + ': ' + s.items.join(', ') }));
     } else if (low === 'contact') {

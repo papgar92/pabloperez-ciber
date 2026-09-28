@@ -10,11 +10,9 @@ export const CONTACT = {
   location: 'Madrid, España',
   github: 'https://github.com/papgar92',
   linkedin: 'https://linkedin.com/in/ppg92',
-  cal: 'https://cal.com/papgar92',
+  cal: '', // 'https://cal.com/papgar92' — desactivado: sin búsqueda activa
   htb: 'https://profile.hackthebox.com/profile/019ec60b-5005-723b-99c8-80cf5f74d4f0',
   cyberdefenders: 'https://cyberdefenders.org/p/papgar92/',
-  cvES: '/CV-PPG-CIBER-ES.pdf',
-  cvEN: '/CV-PPG-CIBER-EN.pdf',
   web: 'https://pabloperez-ciber.vercel.app/',
 };
 
@@ -108,10 +106,11 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { es: 'SIEM / Monitorización', en: 'SIEM / Monitoring', items: ['Wazuh', 'Nagios', 'Zabbix'] },
+  { es: 'SIEM / Monitorización', en: 'SIEM / Monitoring', items: ['Wazuh', 'Microsoft Defender', 'Nagios', 'Zabbix'] },
   { es: 'Red / Tráfico', en: 'Network / Traffic', items: ['Zeek', 'Snort', 'Wireshark', 'pfSense'] },
   { es: 'Detección / ATT&CK', en: 'Detection / ATT&CK', items: ['MITRE ATT&CK', 'Log analysis', 'IOC'] },
-  { es: 'Scripting', en: 'Scripting', items: ['Python', 'Bash', 'PowerShell'] },
+  { es: 'Scripting', en: 'Scripting', items: ['PowerShell', 'Bash'] },
+  { es: 'Cumplimiento', en: 'Compliance', items: ['ENS', 'ISO 27001', 'NIST CSF', 'NIST SP 800-88'] },
 ];
 
 export const PRACTICE = [
@@ -134,21 +133,19 @@ export const CERTS = [
   { name: 'IFCT0050 · Ciberseguridad OT', state: 'done' },
   { name: 'IFCT0410 · Redes', state: 'done' },
   { name: 'IFCT095PO · Python', state: 'done' },
-  { name: 'BTL1 · Blue Team Level 1', state: 'q3' },
-  { name: 'SC-200 · Security Operations', state: 'q4' },
+  { name: 'FP Superior · ASIR', state: 'done' },
   { name: 'Máster Ciberseguridad & IA · Evolve', state: 'progress' },
 ];
 
 export const T = {
   es: {
     skip: 'saltar',
-    role: 'Aspirante a Analista SOC / Blue Team',
-    available: 'Disponible · Madrid',
+    role: 'Sistemas y Ciberseguridad · Blue Team',
     feedTitle: 'Cola de alertas',
     feedSub: 'Triaje en vivo',
     hookLabel: '// el músculo',
     hook:
-      '8 años haciendo triaje de incidencias técnicas en servicio 24/7 bajo SLA. La herramienta cambia —de un panel de alarmas a un SIEM— pero el método es el mismo: priorizar señales, descartar falsos positivos y escalar lo crítico.',
+      'Casi 9 años haciendo triaje de incidencias técnicas en servicio 24/7 bajo SLA. La herramienta cambia —de un panel de alarmas a un SIEM— pero el método es el mismo: priorizar señales, descartar falsos positivos y escalar lo crítico. Hoy lo aplico a la defensa de una empresa del sector Defensa.',
     sectionProjects: 'Pruebas',
     sectionProjectsSub: 'Código real, no diapositivas',
     sectionExp: 'Trayectoria',
@@ -159,10 +156,16 @@ export const T = {
     sectionPractice: 'Práctica activa',
     sectionCerts: 'Formación y ruta',
     expItems: [
-         {
-        role: 'Técnico de Soporte IT',
+      {
+        role: 'Administrador de Sistemas y Ciberseguridad',
+        org: 'Sector Defensa · empresa confidencial',
+        period: '2026 – act.',
+        desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: análisis de riesgos de toda la infraestructura con plan de remediación orientado al ENS, diseño del acceso auditado de terceros (bastión), gobierno de los accesos delegados en Microsoft 365, seguridad del correo (SPF/DKIM/DMARC, Defender) y borrado seguro según NIST SP 800-88.',
+      },
+      {
+        role: 'Técnico de Soporte IT & Desarrollo SAP B1/HANA',
         org: 'Cartronic Group',
-        period: '2025 – act.',
+        period: '2025 – 2026',
         desc: 'Administración de infraestructura corporativa: Active Directory (50+ usuarios), GPOs, firewall WatchGuard, virtualización (Proxmox, VMware) y monitorización (Nagios, Zabbix). Soporte N1-N2 y entorno SAP HANA on-premise.',
       },
 	  {
@@ -180,20 +183,18 @@ export const T = {
     ],
     save: 'Guardar contacto',
     schedule: 'Agendar',
-    cv: 'CV',
     consoleHint: 'Abrir consola',
     consoleClose: 'Cerrar consola',
     statusReady: 'sistema operativo · listo para triaje',
   },
   en: {
     skip: 'skip',
-    role: 'Aspiring SOC / Blue Team Analyst',
-    available: 'Available · Madrid',
+    role: 'Systems & Cybersecurity · Blue Team',
     feedTitle: 'Alert queue',
     feedSub: 'Live triage',
     hookLabel: '// the muscle',
     hook:
-      '8 years triaging technical incidents in a 24/7 SLA-bound service. The tool changes —from an alarm panel to a SIEM— but the method is the same: prioritise signals, rule out false positives and escalate what matters.',
+      'Almost 9 years triaging technical incidents in a 24/7 SLA-bound service. The tool changes —from an alarm panel to a SIEM— but the method is the same: prioritise signals, rule out false positives and escalate what matters. Today I apply it to defending a company in the Defence sector.',
     sectionProjects: 'Proof',
     sectionProjectsSub: 'Real code, not slides',
     sectionExp: 'Track record',
@@ -205,9 +206,15 @@ export const T = {
     sectionCerts: 'Training & path',
     expItems: [
       {
-        role: 'IT Support Technician',
+        role: 'Systems & Cybersecurity Administrator',
+        org: 'Defence sector · confidential company',
+        period: '2026 – now',
+        desc: 'Driving defensive security alongside systems administration: risk analysis of the whole infrastructure with an ENS-oriented remediation plan, design of audited third-party access (bastion), governance of delegated access in Microsoft 365, email security (SPF/DKIM/DMARC, Defender) and secure media sanitization per NIST SP 800-88.',
+      },
+      {
+        role: 'IT Support Technician & SAP B1/HANA Developer',
         org: 'Cartronic Group',
-        period: '2025 – now',
+        period: '2025 – 2026',
         desc: 'Corporate infrastructure administration: Active Directory (50+ users), GPOs, WatchGuard firewall, virtualization (Proxmox, VMware) and monitoring (Nagios, Zabbix). N1-N2 support and on-premise SAP HANA environment.',
       },
 	  {
@@ -225,10 +232,8 @@ export const T = {
     ],
     save: 'Save contact',
     schedule: 'Schedule',
-    cv: 'CV',
     consoleHint: 'Open console',
     consoleClose: 'Close console',
-    event: 'Evolve Talent Day · Jun 25 2026',
     statusReady: 'system operational · ready to triage',
   },
 };

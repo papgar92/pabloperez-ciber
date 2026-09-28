@@ -1,6 +1,6 @@
 # Pablo Pérez García · Portfolio de Ciberseguridad
 
-Portfolio web interactivo donde presento mi perfil como **Analista SOC / Blue Team**: triaje de alertas, detección de amenazas, MITRE ATT&CK y análisis forense (DFIR).
+Portfolio web interactivo donde presento mi perfil de **Sistemas y Ciberseguridad · Blue Team**: detección de amenazas, triaje de alertas, MITRE ATT&CK, cumplimiento (ENS) y análisis forense (DFIR).
 
 🔗 **Verlo en producción:** https://pabloperez-ciber.vercel.app
 
