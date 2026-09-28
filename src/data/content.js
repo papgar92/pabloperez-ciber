@@ -158,7 +158,7 @@ export const T = {
     expItems: [
       {
         role: 'Administrador de Sistemas y Ciberseguridad',
-        org: 'Sector Defensa · empresa confidencial',
+        org: 'Empresa confidencial · sector Defensa',
         period: '2026 – act.',
         desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: análisis de riesgos de toda la infraestructura con plan de remediación orientado al ENS, diseño del acceso auditado de terceros (bastión), gobierno de los accesos delegados en Microsoft 365, seguridad del correo (SPF/DKIM/DMARC, Defender) y borrado seguro según NIST SP 800-88.',
       },
@@ -207,7 +207,7 @@ export const T = {
     expItems: [
       {
         role: 'Systems & Cybersecurity Administrator',
-        org: 'Defence sector · confidential company',
+        org: 'Confidential company · Defence sector',
         period: '2026 – now',
         desc: 'Driving defensive security alongside systems administration: risk analysis of the whole infrastructure with an ENS-oriented remediation plan, design of audited third-party access (bastion), governance of delegated access in Microsoft 365, email security (SPF/DKIM/DMARC, Defender) and secure media sanitization per NIST SP 800-88.',
       },

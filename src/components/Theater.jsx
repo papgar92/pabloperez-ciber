@@ -24,7 +24,7 @@ const COMMON = {
     threatLabel: 'NIVEL DE AMENAZA', containedLabel: 'CONTENIDO', neutralised: 'AMENAZA MITIGADA',
     sign: '— Pablo Pérez García · Sistemas y Ciberseguridad · Blue Team',
     cta: 'Ver quién soy ▸', eyebrow: '// fin del simulacro',
-    closing: '«Solo hay dos tipos de compañías en el mundo: Aquellas que han sido atacadas y lo saben, y aquellas que han sido atacadas, y todavía no lo saben»— R. Mueller, FBI</span>.',
+    closing: '«Solo hay dos tipos de compañías en el mundo: aquellas que han sido atacadas y lo saben, y aquellas que han sido atacadas y todavía no lo saben» <span style="opacity:.6">— R. Mueller, FBI</span>',
   },
   en: {
     boot: [
@@ -41,7 +41,7 @@ const COMMON = {
     threatLabel: 'THREAT LEVEL', containedLabel: 'CONTAINED', neutralised: 'MITIGATED THREAT',
     sign: '— Pablo Pérez García · Systems & Cybersecurity · Blue Team',
     cta: 'See who I am ▸', eyebrow: '// end of simulation',
-    closing: '“There are only two kinds of companies in the world: those that have been attacked and know it, and those that have been attacked but does not know it yet” <span style="opacity:.6">— R. Mueller, FBI</span>'          ,
+    closing: '“There are only two kinds of companies in the world: those that have been attacked and know it, and those that have been attacked and don’t know it yet” <span style="opacity:.6">— R. Mueller, FBI</span>',
   },
 };
 
