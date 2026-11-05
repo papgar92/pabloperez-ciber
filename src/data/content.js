@@ -61,16 +61,16 @@ export const ALERTS = [
   {
     id: 'A-1151',
     mitre: 'T1078',
-    sev: 'crit',
-    es: { title: 'Privilegios excesivos en cuentas de dominio', src: 'Producción · Active Directory', status: 'Mitigado' },
-    en: { title: 'Excessive privileges on domain accounts', src: 'Production · Active Directory', status: 'Mitigated' },
+    sev: 'info',
+    es: { title: 'Mínimo privilegio en el dominio', src: 'Bastionado · Active Directory', status: 'Registrado' },
+    en: { title: 'Least privilege in the domain', src: 'Hardening · Active Directory', status: 'Logged' },
   },
   {
     id: 'A-1152',
     mitre: 'T1486',
-    sev: 'warn',
-    es: { title: 'Copia del ERP sin probar', src: 'Producción · NAS cifrado + DBCC CHECKDB', status: 'Mitigado' },
-    en: { title: 'Untested ERP backup', src: 'Production · encrypted NAS + DBCC CHECKDB', status: 'Mitigated' },
+    sev: 'info',
+    es: { title: 'Restauración verificada del ERP', src: 'NAS cifrado · DBCC CHECKDB', status: 'Registrado' },
+    en: { title: 'Verified ERP restore', src: 'Encrypted NAS · DBCC CHECKDB', status: 'Logged' },
   },
 ];
 
@@ -175,7 +175,7 @@ export const T = {
         role: 'Administrador de Sistemas y Ciberseguridad',
         org: 'Empresa confidencial · sector Defensa',
         period: '2026 – act.',
-        desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: SIEM (Wazuh) con agente en todos los servidores Windows y monitorización sobre servidores Linux cifrados y bastionados; bastionado de Active Directory (administradores del dominio de 8 a 1); respuesta a incidentes con bloqueo perimetral automático de redes maliciosas (Spamhaus DROP); copia cifrada del ERP con restauración verificada; más de 110 riesgos priorizados con plan de remediación orientado al ENS y borrado seguro según NIST SP 800-88.',
+        desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: SIEM (Wazuh) con agente en todos los servidores Windows y monitorización sobre servidores Linux cifrados y bastionados; bastionado de Active Directory con mínimo privilegio; bloqueo perimetral automático de redes maliciosas conocidas (Spamhaus DROP); copia cifrada del ERP con restauración verificada; análisis de riesgos de toda la infraestructura con plan de remediación orientado al ENS y borrado seguro según NIST SP 800-88.',
       },
       {
         role: 'Técnico de Soporte IT & Desarrollo SAP B1/HANA',
@@ -224,7 +224,7 @@ export const T = {
         role: 'Systems & Cybersecurity Administrator',
         org: 'Confidential company · Defence sector',
         period: '2026 – now',
-        desc: 'Driving defensive security alongside systems administration: SIEM (Wazuh) with an agent on every Windows server and monitoring on encrypted, hardened Linux servers; Active Directory hardening (domain admins cut from 8 to 1); incident response with automatic perimeter blocking of malicious networks (Spamhaus DROP); encrypted ERP backups with verified restores; 110+ risks prioritized with an ENS-oriented remediation plan and secure media sanitization per NIST SP 800-88.',
+        desc: 'Driving defensive security alongside systems administration: SIEM (Wazuh) with an agent on every Windows server and monitoring on encrypted, hardened Linux servers; least-privilege Active Directory hardening; automatic perimeter blocking of known malicious networks (Spamhaus DROP); encrypted ERP backups with verified restores; risk analysis of the whole infrastructure with an ENS-oriented remediation plan and secure media sanitization per NIST SP 800-88.',
       },
       {
         role: 'IT Support Technician & SAP B1/HANA Developer',
