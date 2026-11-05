@@ -58,6 +58,20 @@ export const ALERTS = [
     es: { title: 'Segmentación de red perimetral', src: 'TFG-ASIR · pfSense + Snort', status: 'Registrado' },
     en: { title: 'Perimeter network segmentation', src: 'TFG-ASIR · pfSense + Snort', status: 'Logged' },
   },
+  {
+    id: 'A-1151',
+    mitre: 'T1078',
+    sev: 'crit',
+    es: { title: 'Privilegios excesivos en cuentas de dominio', src: 'Producción · Active Directory', status: 'Mitigado' },
+    en: { title: 'Excessive privileges on domain accounts', src: 'Production · Active Directory', status: 'Mitigated' },
+  },
+  {
+    id: 'A-1152',
+    mitre: 'T1486',
+    sev: 'warn',
+    es: { title: 'Copia del ERP sin probar', src: 'Producción · NAS cifrado + DBCC CHECKDB', status: 'Mitigado' },
+    en: { title: 'Untested ERP backup', src: 'Production · encrypted NAS + DBCC CHECKDB', status: 'Mitigated' },
+  },
 ];
 
 export const PROJECTS = [
@@ -106,8 +120,9 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { es: 'SIEM / Monitorización', en: 'SIEM / Monitoring', items: ['Wazuh', 'Microsoft Defender', 'Nagios', 'Zabbix'] },
-  { es: 'Red / Tráfico', en: 'Network / Traffic', items: ['Zeek', 'Snort', 'Wireshark', 'pfSense'] },
+  { es: 'SIEM / Monitorización', en: 'SIEM / Monitoring', items: ['Wazuh', 'Microsoft Defender', 'Uptime Kuma', 'LibreNMS', 'Nagios', 'Zabbix'] },
+  { es: 'Red / Tráfico', en: 'Network / Traffic', items: ['Zeek', 'Snort', 'Wireshark', 'pfSense', 'MikroTik', 'Spamhaus DROP'] },
+  { es: 'Identidad / Bastionado', en: 'Identity / Hardening', items: ['Active Directory', 'Entra ID', 'Windows LAPS', 'BitLocker', 'Acceso condicional', 'LUKS2', 'fail2ban'] },
   { es: 'Detección / ATT&CK', en: 'Detection / ATT&CK', items: ['MITRE ATT&CK', 'Log analysis', 'IOC'] },
   { es: 'Scripting', en: 'Scripting', items: ['PowerShell', 'Bash'] },
   { es: 'Cumplimiento', en: 'Compliance', items: ['ENS', 'ISO 27001', 'NIST CSF', 'NIST SP 800-88'] },
@@ -160,7 +175,7 @@ export const T = {
         role: 'Administrador de Sistemas y Ciberseguridad',
         org: 'Empresa confidencial · sector Defensa',
         period: '2026 – act.',
-        desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: análisis de riesgos de toda la infraestructura con plan de remediación orientado al ENS, diseño del acceso auditado de terceros (bastión), gobierno de los accesos delegados en Microsoft 365, seguridad del correo (SPF/DKIM/DMARC, Defender) y borrado seguro según NIST SP 800-88.',
+        desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: SIEM (Wazuh) con agente en todos los servidores Windows y monitorización sobre servidores Linux cifrados y bastionados; bastionado de Active Directory (administradores del dominio de 8 a 1); respuesta a incidentes con bloqueo perimetral automático de redes maliciosas (Spamhaus DROP); copia cifrada del ERP con restauración verificada; más de 110 riesgos priorizados con plan de remediación orientado al ENS y borrado seguro según NIST SP 800-88.',
       },
       {
         role: 'Técnico de Soporte IT & Desarrollo SAP B1/HANA',
@@ -168,13 +183,13 @@ export const T = {
         period: '2025 – 2026',
         desc: 'Administración de infraestructura corporativa: Active Directory (50+ usuarios), GPOs, firewall WatchGuard, virtualización (Proxmox, VMware) y monitorización (Nagios, Zabbix). Soporte N1-N2 y entorno SAP HANA on-premise.',
       },
-	  {
+      {
         role: 'Atención técnica 24/7 · Servicio de seguridad electrónica',
         org: 'Movistar Prosegur Alarmas',
         period: '2017 – 2025',
         desc: 'Gestión de incidencias de sistemas de alarma y videovigilancia bajo SLA. Verificación de saltos de alarma, coordinación con inspección y notificación de eventos en plataformas de monitorización.',
       },
-       {
+      {
         role: 'Técnico de Soporte IT (Prácticas)',
         org: 'Prosegur Activa',
         period: '2025',
@@ -209,7 +224,7 @@ export const T = {
         role: 'Systems & Cybersecurity Administrator',
         org: 'Confidential company · Defence sector',
         period: '2026 – now',
-        desc: 'Driving defensive security alongside systems administration: risk analysis of the whole infrastructure with an ENS-oriented remediation plan, design of audited third-party access (bastion), governance of delegated access in Microsoft 365, email security (SPF/DKIM/DMARC, Defender) and secure media sanitization per NIST SP 800-88.',
+        desc: 'Driving defensive security alongside systems administration: SIEM (Wazuh) with an agent on every Windows server and monitoring on encrypted, hardened Linux servers; Active Directory hardening (domain admins cut from 8 to 1); incident response with automatic perimeter blocking of malicious networks (Spamhaus DROP); encrypted ERP backups with verified restores; 110+ risks prioritized with an ENS-oriented remediation plan and secure media sanitization per NIST SP 800-88.',
       },
       {
         role: 'IT Support Technician & SAP B1/HANA Developer',
@@ -217,7 +232,7 @@ export const T = {
         period: '2025 – 2026',
         desc: 'Corporate infrastructure administration: Active Directory (50+ users), GPOs, WatchGuard firewall, virtualization (Proxmox, VMware) and monitoring (Nagios, Zabbix). N1-N2 support and on-premise SAP HANA environment.',
       },
-	  {
+      {
         role: '24/7 technical support · Electronic security service',
         org: 'Movistar Prosegur Alarmas',
         period: '2017 – 2025',
