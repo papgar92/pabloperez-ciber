@@ -72,6 +72,13 @@ export const ALERTS = [
     es: { title: 'Restauración verificada del ERP', src: 'NAS cifrado · DBCC CHECKDB', status: 'Registrado' },
     en: { title: 'Verified ERP restore', src: 'Encrypted NAS · DBCC CHECKDB', status: 'Logged' },
   },
+  {
+    id: 'A-1153',
+    mitre: 'T1078',
+    sev: 'info',
+    es: { title: 'Inicio de sesión M365 desde país inesperado', src: 'SIEM · Microsoft 365', status: 'Registrado' },
+    en: { title: 'M365 sign-in from unexpected country', src: 'SIEM · Microsoft 365', status: 'Logged' },
+  },
 ];
 
 export const PROJECTS = [
@@ -122,7 +129,7 @@ export const PROJECTS = [
 export const SKILLS = [
   { es: 'SIEM / Monitorización', en: 'SIEM / Monitoring', items: ['Wazuh', 'Microsoft Defender', 'Uptime Kuma', 'LibreNMS', 'Nagios', 'Zabbix'] },
   { es: 'Red / Tráfico', en: 'Network / Traffic', items: ['Zeek', 'Snort', 'Wireshark', 'pfSense', 'MikroTik', 'Spamhaus DROP'] },
-  { es: 'Identidad / Bastionado', en: 'Identity / Hardening', items: ['Active Directory', 'Entra ID', 'Windows LAPS', 'BitLocker', 'Acceso condicional', 'LUKS2', 'fail2ban'] },
+  { es: 'Identidad / Bastionado', en: 'Identity / Hardening', items: ['Active Directory', 'Entra ID', 'PingCastle', 'Windows LAPS', 'BitLocker', 'Acceso condicional', 'LUKS2', 'fail2ban'] },
   { es: 'Detección / ATT&CK', en: 'Detection / ATT&CK', items: ['MITRE ATT&CK', 'Log analysis', 'IOC'] },
   { es: 'Scripting', en: 'Scripting', items: ['PowerShell', 'Bash'] },
   { es: 'Cumplimiento', en: 'Compliance', items: ['ENS', 'ISO 27001', 'NIST CSF', 'NIST SP 800-88'] },
@@ -175,7 +182,7 @@ export const T = {
         role: 'Administrador de Sistemas y Ciberseguridad',
         org: 'Empresa confidencial · sector Defensa',
         period: '2026 – act.',
-        desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: SIEM (Wazuh) con agente en todos los servidores Windows y monitorización sobre servidores Linux cifrados y bastionados; bastionado de Active Directory con mínimo privilegio; bloqueo perimetral automático de redes maliciosas conocidas (Spamhaus DROP); copia cifrada del ERP con restauración verificada; análisis de riesgos de toda la infraestructura con plan de remediación orientado al ENS y borrado seguro según NIST SP 800-88.',
+        desc: 'Impulso la ciberseguridad defensiva junto a la administración de sistemas: SIEM (Wazuh) con agente en todos los servidores Windows, registros de Microsoft 365 integrados con reglas propias de detección y auditoría avanzada en los controladores de dominio; monitorización sobre servidores Linux cifrados y bastionados; bastionado de Active Directory con mínimo privilegio y auditoría periódica con PingCastle; bloqueo perimetral automático de redes maliciosas conocidas (Spamhaus DROP); copia cifrada del ERP con restauración verificada; análisis de riesgos de toda la infraestructura con plan de remediación orientado al ENS y borrado seguro según NIST SP 800-88.',
       },
       {
         role: 'Técnico de Soporte IT & Desarrollo SAP B1/HANA',
@@ -224,7 +231,7 @@ export const T = {
         role: 'Systems & Cybersecurity Administrator',
         org: 'Confidential company · Defence sector',
         period: '2026 – now',
-        desc: 'Driving defensive security alongside systems administration: SIEM (Wazuh) with an agent on every Windows server and monitoring on encrypted, hardened Linux servers; least-privilege Active Directory hardening; automatic perimeter blocking of known malicious networks (Spamhaus DROP); encrypted ERP backups with verified restores; risk analysis of the whole infrastructure with an ENS-oriented remediation plan and secure media sanitization per NIST SP 800-88.',
+        desc: 'Driving defensive security alongside systems administration: SIEM (Wazuh) with an agent on every Windows server, Microsoft 365 logs integrated with custom detection rules and advanced auditing on the domain controllers; monitoring on encrypted, hardened Linux servers; least-privilege Active Directory hardening with periodic PingCastle audits; automatic perimeter blocking of known malicious networks (Spamhaus DROP); encrypted ERP backups with verified restores; risk analysis of the whole infrastructure with an ENS-oriented remediation plan and secure media sanitization per NIST SP 800-88.',
       },
       {
         role: 'IT Support Technician & SAP B1/HANA Developer',
